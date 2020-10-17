@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testExecutions version="1">
+    <file path="test/pruebaSistema.js">
+        <testCase name="Category resources GET /pedido/1 - statusCode" duration="18"/>
+        <testCase name="Category resources GET /pedido/1 - Operación correcta" duration="2"/>
+        <testCase name="Category resources GET /cliente/notificacion/1 - statusCode" duration="3"/>
+        <testCase name="Category resources GET /cliente/notificacion/1 - Operación correcta" duration="2"/>
+        <testCase name="Category resources GET /restaurante/pedido/1 - statusCode" duration="2"/>
+        <testCase name="Category resources GET /cliente/notificacion/1 - Operación correcta" duration="2"/>
+        <testCase name="Category resources GET /restaurante/pedido/status/close/1 - statusCode" duration="3"/>
+        <testCase name="Category resources GET /restaurante/pedido/status/close/1 - Operación correcta" duration="3"/>
+        <testCase name="Category resources GET /restaurante/pedido/status/close/1 - statusCode" duration="2"/>
+        <testCase name="Category resources POST /repartidor/pedido/recoger - statusCode" duration="1"/>
+        <testCase name="Category resources POST /pedido/recoger - statusCode" duration="1"/>
+    </file>
+</testExecutions>

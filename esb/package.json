@@ -1,0 +1,31 @@
+{
+  "name": "restaurante",
+  "version": "1.0.0",
+  "description": "Micro service to Restaurant managment",
+  "main": "app.js",
+  "scripts": {    
+    "coverage": "nyc npm test",
+    "test": "mocha test/pruebaSistema.js"
+  },
+
+  
+  "author": "Erick Tejaxun",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "request": "^2.88.2"
+  },
+  "config": {
+    "mocha-sonar-reporter": {
+      "testdir": "mocha test/pruebaSistema",
+      "classnameSuffix": ".js",
+      "outputfile": "test/TEST-all.xml"
+    }
+  },
+  "devDependencies": {
+    "@danmasta/mocha-sonar": "^1.0.0",
+    "mocha-sonar-reporter": "^0.1.6",
+    "mocha-sonarqube-reporter": "^1.0.2"
+  }
+}
