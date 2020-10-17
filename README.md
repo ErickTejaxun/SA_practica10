@@ -1,9 +1,10 @@
 # Laboratorio Software Avanzado
-## Práctica 5
+## Práctica 10
 
 Este repositorio contiene el proyecto inicial que se ha estado desarrollando en las prácticas anteriores
 agregando técnicas de DevOps para CI/CD y agregando buenas prácticas y estándares de desarrollo.
 
+Esto se ha desplepegado utilizando docker compose. 
 
 ## ESB
 El ESB funciona como intermediario para la comunicación entre todos los microservicios. Está en la carpeta esb.
