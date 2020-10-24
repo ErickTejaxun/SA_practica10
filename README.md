@@ -8,6 +8,8 @@ Esto se ha desplepegado utilizando docker compose.
 
 Cada servido está contenido en cada una de las carpetas de este proyecto y contiene su propio Dockerfile para poder crear la imagen. 
 
+Enlace hacia el video:
+https://youtu.be/0TpeR6TP0AU
 
 # Desplegar arquitecturas
 
