@@ -1,19 +1,17 @@
 version: '3.8'
 services:
-  db:
-    image: mysql:latest
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: sa_db
+  clientehost:    
+    build: ./cliente
+    container_name: clientehost
+  repartidor:
+    build: ./repartidor
+    container_name: repartidorhost    
+  restaurante:
+    build: ./restaurante
+    image: sa/restaurante:latest    
+    container_name: restaurantehost    
+  esbhost:
+    build: ./esb
+    container_name: esbhost
     ports:
-        - "3307:3306"        
-    volumes:      
-      - ./mysql/data:/var/lib/mysql 
-      - "./setup.sql:/docker-entrypoint-initdb.d/1.sql"        
-  web:
-    build: .
-    ports:
-      - "5000:5000"  
-volumes:
-  volumendb:
+      - "8080:8080"    

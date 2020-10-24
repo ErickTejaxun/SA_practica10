@@ -6,6 +6,19 @@ agregando técnicas de DevOps para CI/CD y agregando buenas prácticas y estánd
 
 Esto se ha desplepegado utilizando docker compose. 
 
+Cada servido está contenido en cada una de las carpetas de este proyecto y contiene su propio Dockerfile para poder crear la imagen. 
+
+
+# Desplegar arquitecturas
+
+Para relizar la construcción y el despliegue de la arquitectura, ejecutar:
+
+```bash
+docker-compose up
+```
+
+
+
 ## ESB
 El ESB funciona como intermediario para la comunicación entre todos los microservicios. Está en la carpeta esb.
 

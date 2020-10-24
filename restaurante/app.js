@@ -5,10 +5,10 @@ var querystring = require('querystring');
 var request = require('request');
 
 const app = express();
-var PORTRESTAURANTE = 5000;
-var PORTREPARTIDOR  = 5600;
-var PORTCLIENTE     = 5800;
-var PORTEBS         = 6000;
+var PORTRESTAURANTE = 8080;
+var PORTREPARTIDOR  = 8080;
+var PORTCLIENTE     = 8080;
+var PORTEBS         = 8080;
 var pedidos = [];
 var contadorPedido = 0;
 
@@ -18,7 +18,7 @@ var contadorPedido = 0;
  */
 var avisarRepartidor = function(codigo)
 {
-    var host = 'localhost';
+    var host = 'esbhost';
     var port = PORTEBS;
     var path = '/repartidor/pedido/recoger';
 
