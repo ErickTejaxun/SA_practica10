@@ -13,5 +13,10 @@ services:
   esbhost:
     build: ./esb
     container_name: esbhost
+  servicio:
+    image: nginx:latest    
+    container_name: aplicacion
     ports:
-      - "8080:8080"    
+      - "80:80"
+    volumes:
+      - ./proxyfiles:/etc/nginx/conf.d/

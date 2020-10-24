@@ -1,15 +1,19 @@
 # Laboratorio Software Avanzado
-## Práctica 10
+## Práctica 11
 
-Este repositorio contiene el proyecto inicial que se ha estado desarrollando en las prácticas anteriores
-agregando técnicas de DevOps para CI/CD y agregando buenas prácticas y estándares de desarrollo.
 
-Esto se ha desplepegado utilizando docker compose. 
+Se le ha agregado un proxy inverso a la arquitectura de la práctica anterior para que se pueda acceder a todos los servicios desde el mismo puerto 8080. 
+
+Para ello se ha configurado un nuevo contenedor con una imagen de nginx y con sus respectivas configuraciones.
+
+
+Enlace hacia el video:
+https://youtu.be/9E5H0xpaqQI
+
 
 Cada servido está contenido en cada una de las carpetas de este proyecto y contiene su propio Dockerfile para poder crear la imagen. 
 
-Enlace hacia el video:
-https://youtu.be/0TpeR6TP0AU
+
 
 # Desplegar arquitecturas
 
