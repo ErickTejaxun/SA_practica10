@@ -9,7 +9,8 @@ pipeline
             {
                 echo 'Comenzando la construcción de los artefactos'
                 sh 'cd cliente'
-                sh 'npm build'                
+                sh 'npm install'                
+                sh 'npm start'
             }                        
         }
     }
