@@ -8,7 +8,7 @@ const { resolve } = require('path');
 const app = express();
 var PORTRESTAURANTE = 8080;
 var PORTREPARTIDOR  = 8080;
-var PORTCLIENTE     = 8080;
+var PORTCLIENTE     = process.env.PORTCLIENTE;
 var PORTEBS         = 8080;
 var pedidos = [];
 
