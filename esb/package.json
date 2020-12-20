@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "Micro service to Restaurant managment",
   "main": "app.js",
-  "scripts": {    
+  "scripts": {
     "coverage": "nyc npm test",
+    "start": "node_modules/nodemon/bin/nodemon.js",
     "test": "mocha test/pruebaSistema.js"
   },
-
-  
   "author": "Erick Tejaxun",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "http": "0.0.1-security",
+    "nodemon": "^2.0.6",
     "request": "^2.88.2"
   },
   "config": {

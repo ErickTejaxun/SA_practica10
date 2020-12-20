@@ -6,10 +6,10 @@ var request = require('request');
 const { resolve } = require('path');
 
 const app = express();
-var PORTRESTAURANTE = 8080;
-var PORTREPARTIDOR  = 8080;
+var PORTRESTAURANTE = process.env.PORTRESTAURANTE;
+var PORTREPARTIDOR  = process.env.PORTREPARTIDOR;
 var PORTCLIENTE     = process.env.PORTCLIENTE;
-var PORTEBS         = 8080;
+var PORTEBS         = process.env.PORTEBS;
 var pedidos = [];
 
 
