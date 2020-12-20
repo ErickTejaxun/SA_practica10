@@ -5,14 +5,14 @@ pipeline
     {
         stage("Construcción de los artefactos")
         {   
-            steps
-            {
-                echo 'Estableciendo variables de entorno para pruebas'
-                sh 'export PORTCLIENTE=9000'                
-                sh 'export PORTRESTAURANTE=9100'
-                sh 'export PORTREPARTIDOR=9200'
-                sh 'export PORTEBS=9300'
+            echo 'Estableciendo variables de entorno para pruebas'               
+            sh 'export PORTCLIENTE=9000'                
+            sh 'export PORTRESTAURANTE=9100'
+            sh 'export PORTREPARTIDOR=9200'
+            sh 'export PORTEBS=9300'            
 
+            steps
+            {                
                 echo 'Pruebas de construcción de servicio cliente'
                 dir("cliente") 
                 {                    
@@ -39,9 +39,10 @@ pipeline
                 {                    
                     sh 'npm install'                
                     sh 'npm start'
-                }                                                            
-
+                }                                                                                            
             }                        
+
+            sh 'forever stopall'
         }
     }
 }
